@@ -1,0 +1,138 @@
+/* Estilos Globales y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #1a365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 4px solid #00bcff;
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid de Tarjetas (3 Columnas) */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+/* Roles */
+.role {
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.role-leader { color: #0076ff; }
+.role-css { color: #00a86b; }
+.role-html { color: #e056fd; }
+
+/* Zona de Interacción (JS) */
+.action-area {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#btn-saludo {
+    background-color: #00bcff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn-saludo:hover {
+    background-color: #009bcc;
+}
+
+#mensaje-saludo {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a365d;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Pie de página */
+.main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    border-top: 1px solid #e2e8f0;
+}
